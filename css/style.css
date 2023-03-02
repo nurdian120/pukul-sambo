@@ -1,0 +1,81 @@
+h1, h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    /* width: 50%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-color: rgba(253, 253, 253, 0.3); */
+    color: rgb(255, 252, 252);
+}
+  body{
+    background-image: url(../img/sihir.jpg);
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  button {
+    display: block;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .papan-skor{
+    color: #fcfcfc;
+    position: relative;
+    right: 30px;
+
+  }
+  .container {
+    width: 600px;
+    margin: auto;
+    cursor: url(../img/palu1.png), auto;
+  }
+  
+  .container:active {
+    cursor: url(../img/palu2.png), auto;
+  }
+  
+  .tanah {
+    background-color: rgba(238, 189, 27, 0.4);
+    background-position: center;
+    background-size: cover;
+    
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/tanah.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+  }
+  
+  .tikus {
+    width: 100%;
+    height: 100%;
+    background: url(../img/ww.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 110px;
+    transition: top 0.3s;
+  }
+  
+  .tanah.muncul .tikus {
+    top: -15px;
+  }
